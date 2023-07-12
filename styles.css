@@ -1,7 +1,24 @@
+/* General styles */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+}
+
+/* Adjustments for mobile views */
+@media (max-width: 600px) {
+  .carousel {
+    width: 100%; /* Make the slider fit to the mobile view */
+    height: auto; /* Remove fixed height to maintain aspect ratio */
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Change the product grid to a single column */
+    justify-items: center; /* Center the items in the grid */
+  }
 }
 
 /* General styles */
